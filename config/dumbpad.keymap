@@ -8,10 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define TIMEOUT 50
-#define DEFAULT 0
-#define ADJUST  1
-
 &left_encoder { status = "okay"; };
 
 &right_encoder { status = "disabled"; };
@@ -33,7 +29,7 @@
         calculator_combo_consumer {
             bindings = <&kp C_AL_CALCULATOR>;
             key-positions = <14 15>;
-            timeout-ms = <TIMEOUT>;
+            timeout-ms = <50>;
         };
     };
 
